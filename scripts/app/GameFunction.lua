@@ -141,3 +141,27 @@ function updateObjectListState(list,state) ----------更新状态
     end
     return count
 end
+
+-- function updateGoal( node ) ----------更新目标单位
+--     if node._state ~= State.null then
+--         node._life = node._life - 1
+--         if node._life <= 0 then
+--             updateAttackMe(node)
+--             node:setState(State.null)
+--         end
+--     end
+-- end
+
+-- function updateAttackMe( node ) ----------更新攻击单位列表
+--     if(node._listAttackMe ~= {})then
+--         local i = 1
+--         local count = #node._listAttackMe
+--         while i <= count do
+--             local obj = node._listAttackMe[i]
+--             if obj._state == State.fight then
+--                 obj:setState(obj._cmd)
+--             end
+--             i = i + 1
+--         end
+--     end
+-- end
